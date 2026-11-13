@@ -1,13 +1,26 @@
-/* Tweak account section */
-"Account" = "Account";
+/* Account section */
+"Account" = "Hesap";
 "SkipLogInAlert" = "Giriş hatırlatmasını kapat";
-"LogIn" = "Log in";
+"LogIn" = "Giriş yap";
 "ManageAccount" = "Hesabı yönet";
 "AccessDenied" = "Erişim reddedildi";
 "LogOut" = "Çıkış yap";
 "LogOutTitle" = "Çıkış yap";
 "LogOutMessage" = "Devam etmek istediğinden emin misin?";
-"FeaturesNotActivated" = "Henüz giriş yapmadın. YouTube Plus özelliklerine erişmek için aktif bir abonelikle giriş yapman gerekiyor.";
+"FeaturesNotActivated" = "Henüz giriş yapmadın. YouTube Plus özelliklerine erişmek için aktif bir aboneliği olan bir hesapla giriş yapmalısın.";
+
+/* Account status */
+"Access.Status" = "Durum";
+"Access.Active" = "Aktif";
+"Access.AccountRequired" = "Hesap gerekiyor";
+"Access.LogIn" = "Giriş yap";
+"Access.DeviceLimit" = "Cihaz sınırına ulaşıldı";
+"Access.DeviceNotRegistered" = "Cihaz bağlı değil";
+"Access.InsufficientPlan" = "Abonelik seviyesi yetersiz";
+"Access.NotFound" = "Hesap bulunamadı";
+"Access.AppNotFound" = "Uygulama kayıtlı değil";
+"Access.SignInAgain" = "Tekrar giriş yap";
+"Access.RequestError" = "İstek hatası";
 
 /* Main section */
 "Main" = "Ana";
@@ -17,6 +30,8 @@
 "Downloading" = "İndirme";
 "DownloadManager" = "İndirme yöneticisi";
 "DownloadManagerDesc" = "Oynatıcının altındaki 'İndir' düğmesi eylemini, Video, Ses, Küçük Resim Görüntüsü indirmeye ve Video Bilgilerini Kopyalamaya olanak tanıyan bir İndirme Yöneticisi ile değiştirir.";
+"ReplaceDownloadMenu" = "Menüdeki «İndir»i değiştir";
+"ReplaceDownloadMenuDesc" = "Yerleşik indirme yerine YTPlus indirme formunu açar.";
 "PostManager" = "Gönderi bilgisini kaydet";
 "PostManagerDesc" = "Uzun basarak gönderi metnini kopyalamaya ve gönderiyi resim olarak kaydetmeye olanak tanır.";
 "SaveProfilePhoto" = "Profil resmini kaydet";
@@ -31,8 +46,10 @@
 
 "PostDownloadAction" = "İndirme sonrası eylem";
 "PostDownloadDesc" = "Seçilen eylem, video indirme işlemi başarılı bir şekilde tamamlandığında gerçekleştirilecektir.";
+"SaveToDownloads" = "İndirilenler";
 "SaveToPhotos" = "Fotoğraflara kaydet";
 "Share" = "Paylaş";
+"SaveToPrivate" = "Özel bölüm";
 "Copy" = "Kopyala";
 "Ask" = "Sor";
 "DownloadCompleted" = "İndirme tamamlandı";
@@ -65,6 +82,8 @@
 "RemoveCastDesc" = "Gezinme çubuğundan Cast düğmesini gizler.";
 "RemoveNotifications" = "Bildirimler düğmesini gizle";
 "RemoveNotificationsDesc" = "Gezinme çubuğundan Bildirimler düğmesini gizler.";
+"RemoveMessages" = "Mesajlar düğmesini gizle";
+"RemoveMessagesDesc" = "Gezinme çubuğundan Mesajlar düğmesini gizler.";
 "RemoveSearch" = "Arama düğmesini gizle";
 "RemoveSearchDesc" = "Gezinme çubuğundan Arama düğmesini gizler.";
 "RemoveVoiceSearch" = "Sesli arama düğmesini gizle";
@@ -89,14 +108,22 @@
 "RemoveCommunityPostsDesc" = "Akıştan topluluk gönderilerini kaldırır.";
 "RemoveMixPlaylists" = "Karışımları kaldır";
 "RemoveMixPlaylistsDesc" = "YouTube tarafından oluşturulan karışım çalma listesini akıştan kaldırır.";
+"RemovePlaylists" = "Oynatma listelerini kaldır";
+"RemovePlaylistsDesc" = "Akıştan oynatma listesi kartlarını kaldırır.";
+"KeepPlaylistsInSubscriptions" = "Oynatma listelerini Aboneliklerde tut";
+"KeepPlaylistsInSubscriptionsDesc" = "Abonelikler sekmesindeki oynatma listelerinin kaldırılmasını engeller.";
 "RemoveLiveVids" = "Canlı yayınları kaldır";
 "RemoveLiveVidsDesc" = "Ana sekmesinden canlı yayınları kaldırır.";
+"RemoveUpcomingLives" = "Yaklaşan canlı yayınları kaldır";
+"RemoveUpcomingLivesDesc" = "Akıştan planlanan canlı yayın duyurularını kaldırır.";
 "RemoveHorizontalFeeds" = "Yatay akışları kaldır";
 "RemoveHorizontalFeedsDesc" = "Ana sekmesinden tüm yatay akışları (Haberler, İzlemeye Devam Et, Gönderi koleksiyonu, vb.) kaldırır.";
 "RemoveMoreTopics" = "\"Daha fazla konu\"yu kaldır";
 "RemoveMoreTopicsDesc" = "Akıştan \"Daha fazla konu\"yu kaldırır.";
 "RemovePlayables" = "Mini oyunları kaldır";
 "RemovePlayablesDesc" = "Akıştan mini oyunları (Playables) kaldırır.";
+"RemoveMembersOnly" = "Yalnızca üyelere özel videoları kaldır";
+"RemoveMembersOnlyDesc" = "Akıştan yalnızca kanal üyelerine özel olan videoları kaldırır.";
 "FixAlbums" = "Kapakları düzelt";
 "FixAlbumsDesc" = "Rusya'daki kullanıcılar için kapakların görüntülenmesini düzeltir.";
 
@@ -116,8 +143,17 @@
 "IgnoreAutoDubDesc" = "Tercih edilen dil parçası otomatik dublajlıysa manuel seçimi atlar.";
 "CustomCaptions" = "Seçilen altyazılar";
 "CustomCaptionsDesc" = "Görüntülenecek tercih edilen altyazı dilini belirtir (varsa)";
+"AddLanguage" = "Dil ekle";
 "AutoGenCaps" = "Otomatik oluşturulan altyazılar";
 "AutoGenCapsDesc" = "Seçilen altyazılar bulunamazsa, YouTube Plus orijinal altyazıların çevirisini veya otomatik oluşturulan altyazıların çevirisini seçmeye çalışacaktır.";
+"CaptionsIfNoAudio" = "Tercih edilen ses yoksa altyazıları göster";
+"CaptionsIfNoAudioDesc" = "Videoda tercih ettiğiniz dillerde ses parçası yoksa, seçilen dillerdeki altyazılar açılır.";
+"FixPlayback" = "Oynatmayı düzelt";
+"FixPlaybackDesc" = "Daha eski cihazlarda ve harici yüklenen uygulamalarda oynatma sorunlarını gidermeye yardımcı olur. Videolar sizin için sorunsuz oynatılıyorsa bunu kapalı tutmanız daha iyidir.";
+"FixPlayback.Enabled" = "Oynatma başarısız oldu, bu yüzden oynatma düzeltmesi açıldı. Oynatıcı ayarlarından kapatabilirsiniz.";
+"FixPlayback.TurnOff" = "Şimdi kapat";
+"NoSharePlayPrompt" = "SharePlay'i önerme";
+"NoSharePlayPromptDesc" = "FaceTime araması sırasında video izlerken YouTube SharePlay başlatmayı sormaz. Başkaları tarafından başlatılan SharePlay'e yine de katılabilirsiniz.";
 
 "Player.Interface" = "Arayüz";
 "SleepTimer" = "Uyku zamanlayıcısı";
@@ -128,6 +164,17 @@
 "MuteButtonDesc" = "Kaplama üzerinde sesi kapatma/açma düğmesini gösterir.";
 "LockButton" = "Kilit düğmesi";
 "LockButtonDesc" = "Kaplama üzerinde, ekranı hızlıca kilitlemek ve tam ekran moduna geçmek için bir düğme gösterir.";
+"OverlayButtonsOrder" = "Kaplama düğmeleri sıralaması";
+"OverlayButtonsOrderDesc" = "Oynatıcı kaplamasındaki YTPlus düğmelerinin sırasını belirler.";
+"ResetOrder" = "Sıralamayı sıfırla";
+"Player.ButtonsFirstRow" = "Birinci satır düğmeleri";
+"Player.ButtonsSecondRow" = "İkinci satır düğmeleri";
+"LoopButton" = "Tekrarla düğmesi";
+"LoopButtonDesc" = "Mevcut videoyu tekrarlayan bir düğme gösterir. YouTube her yeni videoda tekrarı sıfırlar, bu nedenle mod her seferinde yeniden ayarlanır.";
+"FullscreenButton" = "Sağa tam ekran";
+"FullscreenButtonDesc" = "Döndürme kilidi açık olsa bile, YouTube'unkinden farklı bir yöne döndürülmüş tam ekran açan bir düğme ekler.";
+"PiPButton" = "Resim İçinde Resim düğmesi";
+"PiPButtonDesc" = "Arka planda oynatmak için Resim İçinde Resim modunu açıp kapatan bir düğme gösterir.";
 "HideOverlayTitle" = "Video başlığını gizle";
 "HideOverlayTitleDesc" = "Tam ekran kaplamada video başlığını gizler.";
 "HideAutoplay" = "Otomatik oynatma anahtarını gizle";
@@ -138,8 +185,6 @@
 "HidePrevNextDesc" = "Kaplama üzerinde Önceki ve Sonraki video düğmelerini gizler.";
 "ReplacePrevNext" = "İleri sar ve Geri sar düğmeleri";
 "ReplacePrevNextDesc" = "Kaplama üzerinde Önceki ve Sonraki video düğmelerini İleri sar ve Geri sar düğmeleri ile değiştirir.";
-"RememberLoopMode" = "Döngü modunu hatırla";
-"RememberLoopModeDesc" = "Oynatıcının ek ayarlarında seçilen döngü modunu hatırlar.";
 "FullscreenToTheLeft" = "Sol dönüşte tam ekran";
 "FullscreenToTheLeftDesc" = "Tam ekran moduna geçiş, ekranı sola döndürecektir.";
 "PortraitFullscreen" = "Dikey tam ekran modu";
@@ -154,8 +199,8 @@
 "NoAutonavEndScreenCardsDesc" = "Oynatma bittikten sonra ne oynatılacağını gösteren ekranı gizler. Bu seçeneği devre dışı bırakmak otomatik oynatmayı da devre dışı bırakır.";
 "NoFullscreenActions" = "Tam ekran eylemlerini devre dışı bırak";
 "NoFullscreenActionsDesc" = "Tam ekran modunda eylemler panelini devre dışı bırakır.";
-"NoMoreVideosButton" = "Hide more videos button";
-"NoMoreVideosButtonDesc" = "Hides the more videos button in fullscreen mode.";
+"NoMoreVideosButton" = "Daha fazla video düğmesini gizle";
+"NoMoreVideosButtonDesc" = "Tam ekran modunda daha fazla video düğmesini gizler.";
 "NoHudMsgs" = "Snackbar'ları devre dışı bırak";
 "NoHudMsgsDesc" = "YouTube'un ekran üstü HUD mesajları göstermesini engeller.";
 "PersistentProgressBar" = "Kalıcı ilerleme çubuğu";
@@ -198,8 +243,12 @@
 "PlayerNoReportDesc" = "Oynatıcının altındaki \"Bildir\" düğmesini kaldırır.";
 "PlayerNoHype" = "\"Hype\" düğmesini kaldır";
 "PlayerNoHypeDesc" = "Oynatıcının altındaki \"Hype\" düğmesini kaldırır.";
+"PlayerNoAsk" = "\"Sor\" düğmesini kaldır";
+"PlayerNoAskDesc" = "Oynatıcının altındaki \"Sor\" düğmesini kaldırır.";
 "PlayerNoStopAds" = "\"Reklamları durdur\" düğmesini kaldır";
 "PlayerNoStopAdsDesc" = "Oynatıcının altındaki \"Reklamları durdur\" düğmesini kaldırır.";
+"OpenVidsInYTPlus" = "Videoları YTPlus oynatıcısında aç";
+"OpenVidsInYTPlusDesc" = "Akıştaki videoyu YouTube yerine kendi oynatıcımızda oynatır.";
 
 "ProgressBarStyle" = "İlerleme çubuğu stili";
 "SolidColor" = "Düz renk";
@@ -227,6 +276,8 @@
 "AutoFullscreenDesc" = "Videoları otomatik olarak tam ekran modunda oynatır.";
 "ExitFullscreen" = "Bitince tam ekran modundan çık";
 "ExitFullscreenDesc" = "Video oynatımı sonunda tam ekran modundan çıkar.";
+"SuppressUnmute" = "Ses tuşlarında önizlemeyi sessizde tut";
+"SuppressUnmuteDesc" = "Ses tuşlarının satır içi önizlemelerin sesini açmasını engeller.";
 
 "Player.ControlCenter" = "Kontrol Merkezi";
 "RcSkipBackward" = "Geri atla";
@@ -315,8 +366,8 @@
 "HideShortsLogoDesc" = "Shorts logosunu sol üst köşede gizler.";
 "HideShortsSearch" = "Arama düğmesini gizle";
 "HideShortsSearchDesc" = "Shorts üst bilgisinde arama düğmesini gizler.";
-"HideShortsCamera" = "Kamera düğmesini gizle";
-"HideShortsCameraDesc" = "Shorts üst bilgisinde kamera düğmesini gizler.";
+"HideShortsMute" = "Sessiz düğmesini gizle";
+"HideShortsMuteDesc" = "Shorts üst çubuğundaki ses açma/kapama düğmesini gizler.";
 "HideShortsMore" = "Daha fazla (⋮) düğmesini gizle";
 "HideShortsMoreDesc" = "Shorts üst bilgisinde Daha fazla (⋮) düğmesini gizler. Ekrana uzun süre basarak erişilebilir.";
 
@@ -324,6 +375,8 @@
 "HideCarouselSubDesc" = "Duraklatılmış durumda görünen Abonelikler düğmesini kaldırır.";
 "HideCarouselLive" = "Canlı'yı gizle";
 "HideCarouselLiveDesc" = "Duraklatılmış durumda görünen Canlı düğmesini kaldırır.";
+"HideCarouselLens" = "Lens'i gizle";
+"HideCarouselLensDesc" = "Duraklatılmış durumda görünen Lens düğmesini kaldırır.";
 "HideCarouselTrends" = "Trendleri gizle";
 "HideCarouselTrendsDesc" = "Duraklatılmış durumda görünen Trendler düğmesini kaldırır.";
 "HideCarouselShop" = "Mağazayı gizle";
@@ -331,8 +384,6 @@
 
 "HideShortsLike" = "Beğen düğmesi yok";
 "HideShortsLikeDesc" = "Eylem çubuğundan Beğen düğmesini kaldırır.";
-"HideShortsDislike" = "Beğenmeme düğmesi yok";
-"HideShortsDislikeDesc" = "Eylem çubuğundan Beğenmeme düğmesini kaldırır.";
 "HideShortsComments" = "Yorumlar düğmesi yok";
 "HideShortsCommentsDesc" = "Eylem çubuğundan Yorumlar düğmesini kaldırır.";
 "HideShortsShare" = "Paylaş düğmesi yok";
@@ -341,6 +392,8 @@
 "HideShortsRemixDesc" = "Eylem çubuğundan Remix düğmesini kaldırır.";
 "HideShortsAudioButton" = "Ses düğmesi yok";
 "HideShortsAudioButtonDesc" = "Eylem çubuğundan Ses düğmesini kaldırır.";
+"HideShortsDownload" = "İndir düğmesi yok";
+"HideShortsDownloadDesc" = "Eylem çubuğundan YouTube Plus indirme düğmesini kaldırır.";
 "HideShortsSuggestion" = "Öneri yok";
 "HideShortsSuggestionDesc" = "Oynatma listesine ekle, Süper Teşekkürler vb. önerilerin bulunduğu düğmeyi kaldırır.";
 "HideShortsSubscribe" = "Takip et düğmesi yok";
@@ -374,6 +427,103 @@
 "UCOpNcN46UbXVtpKMrmU4Abg" = "Gaming";
 "UCEgdi0XIXXZ-qJOFPf4JSKw" = "Spor";
 "FEnotifications_inbox" = "Bildirimler";
+"FEytp_downloads" = "İndirilenler";
+
+/* Downloads tab */
+"Downloads.Select" = "Seç";
+"Downloads.SelectAll" = "Tümünü seç";
+"Downloads.DeselectAll" = "Tüm seçimleri kaldır";
+"Downloads.Selected" = "Seçilenler için eylemler";
+"Close" = "Kapat";
+"Settings" = "Ayarlar";
+"Downloads.Downloading" = "İndiriliyor";
+"Downloads.All" = "Tümü";
+"Downloads.Videos" = "Videolar";
+"Downloads.Shorts" = "Shorts";
+"Downloads.Audio" = "Ses";
+"Downloads.Playlists" = "Oynatma listeleri";
+"Downloads.Private" = "Özel";
+"Downloads.Newest" = "En yeni";
+"Downloads.Oldest" = "En eski";
+"Downloads.Largest" = "En büyük";
+"Downloads.Smallest" = "En küçük";
+"Downloads.Paused" = "Duraklatıldı";
+"Downloads.Queued" = "Sıraya alındı…";
+"Downloads.Interrupted" = "Kesintiye uğradı";
+"Downloads.WaitingForConversion" = "Dönüştürme bekleniyor…";
+"SlowerConversion" = "Daha yavaş dönüştürme";
+"Downloads.Error.Offline" = "Bağlantı yok";
+"Downloads.Error.Timeout" = "Zaman aşımına uğradı";
+"Downloads.Empty" = "Henüz bir şey indirilmedi";
+"Downloads.Unlock" = "Kilidi aç";
+"Downloads.UnlockReason" = "Özel indirmelerin kilidini aç";
+"Downloads.PrivateDownload" = "Özel indirme";
+"Downloads.Added" = "İndirme listesine eklendi";
+"DownloadLater" = "Daha sonra indir";
+"Downloads.SavedForLater" = "Daha sonra indirmek için kaydedildi";
+"Downloads.WaitingToStart" = "Başlamak için bekleniyor";
+"Downloads.Queue" = "Sıra";
+"Downloads.ParallelDownloads" = "Eşzamanlı indirmeler";
+"Downloads.ParallelDownloadsDesc" = "Aynı anda kaç dosyanın indirileceğini belirler. Geri kalanı sırasını bekler.";
+"Downloads.ParallelConversions" = "Eşzamanlı işleme";
+"Downloads.ParallelConversionsDesc" = "Aynı anda kaç dosyanın birleştirileceğini, kesileceğini veya yeniden kodlanacağını belirler. Birden fazla dosya genellikle arka arkaya işlemekten daha yavaştır.";
+"Downloads.AlreadyDownloaded" = "Her şey zaten indirilmiş";
+"Downloads.Duplicate.Video" = "Bu video zaten indirilenlerde var";
+"Downloads.Duplicate.Playlist" = "Bu oynatma listesi zaten indirilenlerde var";
+"Downloads.Duplicate.Message" = "Ayrı bir kopya olarak kaydedilecek. Devam edilsin mi?";
+"Downloads.Duplicate.Playlist.Message" = "Önceden indirilmiş dosyalar atlanacak — yalnızca eksik olanlar alınacak. Devam edilsin mi?";
+"Downloads.StopConverting" = "Dönüştürme durdurulsun mu?";
+"Downloads.StopConverting.Message" = "İndirilen video ve ses olduğu gibi kaydedilip daha sonra yeniden kodlanabilir.";
+"Downloads.SaveWithoutEncoding" = "Yeniden kodlamadan kaydet";
+"Downloads.StopOperation" = "Durdur";
+"Downloads.StopOperation.Message" = "Dosya değiştirilmeden kalacak.";
+"Downloads.Menu.Share" = "Paylaş";
+"Downloads.Menu.SaveToPhotos" = "Fotoğraflara kaydet";
+"Downloads.Menu.Rename" = "Yeniden adlandır";
+"Downloads.Menu.VisitChannel" = "İçerik üreticinin profilini ziyaret et";
+"Downloads.Menu.OpenInYouTube" = "Videoyu YouTube'da aç";
+"Downloads.Menu.OpenPlaylist" = "Oynatma listesini YouTube'da aç";
+"Downloads.DeletePlaylist" = "Oynatma listesi silinsin mi?";
+"Downloads.DeletePlaylist.Message" = "İndirilen tüm içerikleri silinecek.";
+"Downloads.Swipe.Playlist" = "Oynatma listesi";
+"Downloads.Menu.Reencode" = "Yeniden kodla";
+"Downloads.Menu.MoveToPrivate" = "Özel bölüme taşı";
+"Downloads.Menu.MoveToPublic" = "Genel bölüme geri taşı";
+"Downloads.Menu.MoveTo" = "Şuraya taşı…";
+"Downloads.Menu.AllDownloads" = "Tüm indirilenler";
+"Player.Unplayable" = "Bu dosya oynatılamıyor";
+"Player.Unplayable.Message" = "Bu format cihazınız tarafından desteklenmiyor. H.264 olarak yeniden kodlansın mı?";
+"Player.Position" = "%ld / %ld • %@";
+"Player.AutoPlayNext" = "Sonrakini otomatik oynat";
+"Player.TwoFingerToggle" = "İki parmakla oynat/duraklat";
+"Player.RememberProgress" = "İlerlemeyi hatırla";
+"Player.RememberProgressPlaylists" = "Oynatma listelerinde ilerlemeyi hatırla";
+"Player.MoreOptions" = "Daha fazla seçenek";
+"Player.SkipButtons" = "Atlama düğmeleri";
+"Player.Skip.Tracks" = "Önceki ve Sonraki";
+"Player.Skip.Seek" = "İleri sar ve Geri sar";
+"Player.Skip.Disabled" = "Devre dışı bırak";
+"Player.Ambient" = "Ambiyans modu";
+"Player.Ambient.Soft" = "Yumuşak";
+"Player.Ambient.Medium" = "Orta";
+"Player.Ambient.Maximum" = "Maksimum";
+"Player.FullscreenDirection" = "Tam ekran yönü";
+"Player.Direction.Default" = "Varsayılan";
+"Player.Direction.Inverted" = "Ters çevrilmiş";
+"Player.DefaultLayout" = "Varsayılan düzen";
+"Player.Layout.PlayerAndList" = "Oynatıcı ve liste";
+"Player.Layout.Landscape" = "Yatay tam ekran";
+"Player.Layout.PortraitFullscreen" = "Dikey tam ekran";
+"Player.Layout.Adaptive" = "Uyarlanabilir tam ekran";
+"Player.ClosesYouTube" = "YouTube oynatıcısı kapatılsın mı?";
+"Player.ClosesYouTube.Message" = "Aynı anda iki oynatıcıda oynatmak beklenmeyen sorunlara yol açabilir. YouTube oynatıcısı kapatılacak.";
+"Downloads.Deleted" = "Silindi";
+"Downloads.MovedToPrivate" = "Özel bölüme taşındı";
+"Downloads.MovedToPublic" = "Genel bölüme geri taşındı";
+"Downloads.Moved" = "Taşındı";
+"Undo" = "Geri al";
+"Downloads.Swipe.Channel" = "Kanal";
+"Downloads.Swipe.Video" = "Video";
 
 "TranslucentBar" = "Yarı saydam sekme çubuğu";
 "RemoveLabels" = "Etiketleri kaldır";
@@ -388,6 +538,8 @@
 
 /* Interface options */
 "Interface" = "Arayüz";
+"LiquidGlass" = "Liquid Glass";
+"LiquidGlassDesc" = "Bazı öğeleri Liquid Glass stiline uyarlar.";
 "OledTheme" = "OLED teması";
 "OledThemeDesc" = "Tüm koyu renkleri siyaha çevirir";
 "OledKeyboard" = "OLED klavye";
@@ -434,6 +586,10 @@
 "RemoveCommentGuidelinesDesc" = "Yorumlar bölümündeki sabitlenmiş yönergeleri kaldırır.";
 "RemovePlayNext" = "\"Sıranın başına ekle\"yi kaldır";
 "RemovePlayNextDesc" = "Menüden \"Sıranın başına ekle\" seçeneğini kaldırır.";
+"RemovePlayLast" = "\"Sıranın sonuna ekle\"yi kaldır";
+"RemovePlayLastDesc" = "Menüden \"Sıranın sonuna ekle\" seçeneğini kaldırır.";
+"RemovePlayOnDifferent" = "\"Farklı cihazda oynat\"ı kaldır";
+"RemovePlayOnDifferentDesc" = "Menüden \"Farklı cihazda oynat\" seçeneğini kaldırır.";
 "RemoveDownloadMenu" = "\"İndir\"i kaldır";
 "RemoveDownloadMenuDesc" = "Menüden \"İndir\" seçeneğini kaldırır.";
 "RemoveWatchLaterMenu" = "\"Daha Sonra İzle'ye Kaydet\"i kaldır";
@@ -468,6 +624,8 @@
 "SegmentsInMiniPlayerDesc" = "Mini oynatıcının ilerleme çubuğunda renkli kısımları gösterir.";
 "SegmentSkipAudio" = "Sesli uyarı";
 "SegmentSkipAudioDesc" = "Bir kısım atlandığında sesli uyarı çalar.";
+"SegmentSkipFeedback" = "Dokunsal geri bildirim";
+"SegmentSkipFeedbackDesc" = "Bir kısım atlandığında dokunsal geri bildirim (titreşim) oynatır.";
 "DurationWithoutSegments" = "Yeni süreyi göster";
 "DurationWithoutSegmentsDesc" = "Kısımsız toplam süreyi gösterir.";
 "MinimumSkipDuration" = "Atlamak için minimum süre";
@@ -509,12 +667,12 @@
 "Sb.Ask" = "Sor";
 "Sb.Display" = "Oynatıcıda göster";
 
-"PublicUserID" = "Public UserID";
-"PrivateUserID" = "Private UserID";
-"TapToReveal" = "Tap to reveal";
-"Save" = "Save";
-"Error.SbPublicID" = "The public user ID must contain exactly 64 characters";
-"Error.SbPrivateID" = "The private (local) user ID must contain at least 32 characters";
+"PublicUserID" = "Genel Kullanıcı Kimliği";
+"PrivateUserID" = "Özel Kullanıcı Kimliği";
+"TapToReveal" = "Göstermek için dokun";
+"Save" = "Kaydet";
+"Error.SbPublicID" = "Genel kullanıcı kimliği tam olarak 64 karakter içermelidir";
+"Error.SbPrivateID" = "Özel (yerel) kullanıcı kimliği en az 32 karakter içermelidir";
 
 "sb_sponsor" = "Sponsor kısmı";
 "sb_intro" = "Giriş kısmı";
@@ -523,7 +681,7 @@
 "sb_selfpromo" = "Kendini reklamlama kısmı";
 "sb_music_offtopic" = "Müzik dışı kısmı";
 "sb_preview" = "Önizleme kısmı";
-"sb_poi_highlight" = "Highlight";
+"sb_poi_highlight" = "Öne çıkan";
 "sb_filler" = "Doldurma/Şaka kısmı";
 
 "SegmentDetected" = "%@ detected.\n%@";
@@ -552,17 +710,92 @@
 "RPC.DesktopServerRequired" = "Masaüstü sunucusuna ulaşılamıyor. YouTube Plus RPC'nin bilgisayarınızda çalıştığından ve her iki cihazın aynı Wi-Fi ağında olduğundan emin olun.";
 "RPC.OpenSettings" = "Ayarları aç";
 
+/* Parental control */
+"Parental.Title" = "Ebeveyn kontrolü";
+"Parental.Footer" = "YouTube and YouTube Plus settings, account switching and the tab bar menu require a passcode. To prevent the app from being deleted or replaced, use iOS Screen Time.";
+"Parental.TurnOn" = "Ebeveyn kontrolünü aç";
+"Parental.TurnOff" = "Ebeveyn kontrolünü kapat";
+"Parental.ChangePin" = "Şifreyi değiştir";
+"Parental.TurnedOff" = "Ebeveyn kontrolü kapatıldı";
+"Parental.SaveFailed" = "Şifre anahtar zincirine kaydedilemedi";
+"Parental.SetPin" = "Şifre belirle";
+"Parental.SetPinDesc" = "4 veya 6 haneli bir şifreyi iki kez girin.";
+"Parental.NewPin" = "Şifre";
+"Parental.RepeatPin" = "Şifreyi tekrarla";
+"Parental.RecoveryCode" = "Kurtarma kodu";
+"Parental.RecoveryCodeDesc" = "Bu kodu güvenli bir yerde saklayın. Şifreyi unuttuğunuzda ebeveyn kontrolünü kapatmanın tek yoludur ve bir daha gösterilmeyecektir.";
+"Parental.EnterRecoveryDesc" = "Ebeveyn kontrolünü kapatmak için kurtarma kodunu girin.";
+"Parental.EnterPin" = "Şifreyi girin";
+"Parental.WrongPin" = "Yanlış şifre";
+"Parental.LockedOut" = "Çok fazla deneme yapıldı. %@ sonra tekrar deneyin";
+"Parental.Forgot" = "Unuttunuz mu?";
+"Parental.UnlockedFor" = "Erişim açık · %@";
+"Parental.LockNow" = "Şimdi kilitle";
+"Parental.LockNowDesc" = "Ayarlara erişim şimdi kapatılsın mı? Tekrar şifre gerekecektir.";
+"Parental.RestrictedMode" = "Kısıtlı mod";
+"Parental.RestrictedModeDesc" = "YouTube'un kendi kısıtlı modunu açar.";
+"Parental.Links" = "Harici bağlantıları engelle";
+"Parental.LinksDesc" = "Açıklamalardaki ve yorumlardaki bağlantılar şifre olmadan tarayıcıda veya diğer uygulamalarda açılmaz.";
+"Parental.Links.Blocked" = "Bağlantı engellendi";
+"Parental.Links.Open" = "Şifre ile aç";
+"Parental.History" = "İzleme geçmişi";
+"Parental.HistoryDesc" = "Ebeveyn kontrolü açıkken 10 saniyeden uzun süre izlenen video ve Shorts'lar.";
+"Parental.History.Empty" = "İzleme geçmişi boş";
+"Parental.History.Clear" = "İzleme geçmişini temizle";
+"Parental.History.ClearDesc" = "Tüm geçmiş silinecek. Bu işlem geri alınamaz.";
+"Parental.TimeLimits" = "Zaman sınırları";
+"Parental.Limit" = "Günlük sınır";
+"Parental.LimitDesc" = "YouTube'un günde ne kadar süreyle kullanılabileceği. Yalnızca uygulamanın ekranda açık olduğu süre sayılır. Sayaç gece yarısı sıfırlanır.";
+"Parental.Limit.Off" = "Sınır yok";
+"Parental.Limit.Today" = "Bugün";
+"Parental.Limit.UsedOf" = "%@ / %@ kullanıldı";
+"Parental.Limit.Warning" = "5 dakika kaldı";
+"Parental.Limit.Reached" = "Bugünlük süre doldu";
+"Parental.Limit.ReachedDesc" = "Günlük sınır: %@.";
+"Parental.Limit.Extend" = "Süre ekle";
+"Parental.Limit.NoLimitToday" = "Günün geri kalanında sınır yok";
+"Parental.Limit.NoLimitShort" = "sınır yok";
+"Parental.Limit.Restore" = "Sınırları sıfırla";
+"Parental.Limit.RestoreDesc" = "Bugün eklenen süreler ve kaldırılan sınırlar iptal edilecek.";
+"Parental.Limit.RestoreAction" = "Geri yükle";
+"Parental.Hours" = "İzin verilen saatler";
+"Parental.HoursDesc" = "YouTube bu saatler dışında engellenir.";
+"Parental.HoursFrom" = "Başlangıç";
+"Parental.HoursTo" = "Bitiş";
+"Parental.Hours.Blocked" = "Şu anda izin verilmiyor";
+"Parental.Hours.BlockedDesc" = "YouTube, %@ ile %@ arasında kullanılabilir.";
+"Parental.Hours.GrantUntil" = "%@ saatine kadar izin verildi";
+"Parental.Channels" = "Kanallar";
+"Parental.Channels.Mode" = "Kanal filtresi";
+"Parental.Channels.ModeDesc" = "Engellenenler listesi seçilen kanalların izlenmesini engeller, izin verilenler listesi yalnızca seçilenlerin izlenmesine izin verir. Kısıtlama bir video veya kanal sayfası açıldığında uygulanır. Videoların akışta oynamasını durdurmak için YouTube'da şunu kapatın: Ayarlar → Oynatma → Akışlarda oynatma.";
+"Parental.Channels.Off" = "Kapalı";
+"Parental.Channels.Blocklist" = "Engellenenler listesi";
+"Parental.Channels.Allowlist" = "İzin verilenler listesi";
+"Parental.Channels.Blocked" = "Engellenen kanallar";
+"Parental.Channels.Allowed" = "İzin verilen kanallar";
+"Parental.Channels.Add" = "Kanal ekle";
+"Parental.Channels.AddDesc" = "Bir kanal bağlantısı veya @kullanıcıadı yapıştırın.";
+"Parental.Channels.Added" = "%@ listeye eklendi";
+"Parental.Channels.NotFound" = "Kanal bulunamadı";
+"Parental.Channels.Empty" = "Liste boş. Kanallar izleme geçmişinden de eklenebilir.";
+"Parental.Channels.Block" = "Kanalı engelle";
+"Parental.Channels.Allow" = "Kanalına izin ver";
+"Parental.Channels.Unavailable" = "Bu kanal kullanılamıyor";
+
 /* Sleep Timer */
 "SleepTimer.Message" = "Ne yapmak istersiniz?";
-"SleepTimer.StopMessage" = "Uyku zamanlayıcısı sona erdi. Oynatma duraklatıldı.";
+"SleepTimer.StopMessage" = "Uyku zamanlayıcısı sona erdi. Umarım çoktan uyumuşsundur. Eğer uyumadıysan, zamanlayıcıya ek süre ekleyebilirsin.\n\nTatlı rüyalar";
 
 "SleepTimer.TurnOff" = "Kapat";
 "SleepTimer.SelectNewTime" = "Yeni zaman seç";
+"SleepTimer.AddTime" = "Süre ekle";
 "SleepTimer.Dismiss" = "Kapat";
 
 "SleepTimer.EndOfVideo" = "Videonun sonu";
 "SleepTimer.EndAt" = "Şu saatte bitir...";
 "SleepTimer.SelectTime" = "Zaman seç";
+"SleepTimer.SelectChapter" = "Bölüm seç";
+"SleepTimer.ChapterPassed" = "Zaten oynatıldı";
 "SleepTimer.Start" = "Başlat";
 
 /* Developer section */
@@ -604,8 +837,12 @@
 "ImportPreferences" = "Tercihleri içe aktar";
 "PreImportMessage" = "Bu işlem, geçerli tercihlerin yerini seçilen dosyadaki tercihlerle değiştirecektir.\n\nDevam etmek istediğinizden emin misiniz?";
 "ExportPreferences" = "Tercihleri dışa aktar";
-"ResetSettings" = "Ayarları varsayılanlara döndür";
+"ResetSettings" = "Ayarları varsayılana döndür";
 "ResetMessage" = "Bu işlem YTPlus ayarlarını varsayılana sıfırlayacak ve YouTube'u kapatacaktır.\n\nDevam etmek istediğinizden emin misiniz?";
+
+"UpdatePreferences" = "Güncellemeler";
+"NotifyUpdates" = "Güncellemeleri bildir";
+"NotifyUpdatesDesc" = "Tweak'in yeni bir sürümü mevcut olduğunda bir uyarı gösterir";
 
 "ManageCache" = "Önbelleği yönet";
 "ClearCacheAtStart" = "Başlangıçta önbelleği temizle";
@@ -651,19 +888,30 @@
 "CopyTimestampedLink" = "Zaman damgalı bağlantıyı kopyala";
 "CopyTranscript" = "Transkript kopyala";
 "PlayInExternalPlayer" = "Harici oynatıcıda oynat";
+"DownloadPlaylist" = "Oynatma listesini indir";
+"SelectedMedia" = "Seçilen medya";
+"SelectAll" = "Tümünü seç";
+"DeselectAll" = "Tüm seçimleri kaldır";
+"AddPlaylistAsTab" = "Sekme olarak ekle";
+"Add" = "Ekle";
+"EditTab" = "Sekmeyi düzenle";
+"RemoveTab" = "Sekmeyi kaldır";
+"TabName" = "Sekme adı";
+"TabIcon" = "Sekme simgesi";
+"Delete" = "Sil";
 "PlayInSystemPlayer" = "Sistemin oynatıcısında oynat";
 "PlayInInfuse" = "Infuse'da oynat";
 "PlayInVLC" = "VLC'de oynat";
 "PlayerNotFound" = "Oynatıcı bulunamadı";
 "OpenAsRegularVideo" = "Normal video olarak aç";
-"TranslatePost" = "Translate post";
+"TranslatePost" = "Gönderiyi çevir";
 "CopyPostText" = "Gönderi metnini kopyala";
 "SaveCurrentImage" = "Mevcut görüntüyü kaydet";
 "ShowCurrentImage" = "Mevcut görüntüyü göster";
 "CopyCurrentImage" = "Mevcut görüntüyü kopyala";
 "SavePostAsImage" = "Gönderiyi görüntü olarak kaydet";
 "CopyPostAsImage" = "Gönderiyi görüntü olarak kopyala";
-"TranslateComment" = "Translate comment";
+"TranslateComment" = "Yorumu çevir";
 "CopyCommentText" = "Yorum metnini kopyala";
 "SaveCommentAsImage" = "Yorumu görüntü olarak kaydet";
 "CopyCommentAsImage" = "Yorumu görüntü olarak kopyala";
@@ -682,6 +930,7 @@
 "Error" = "Hata";
 "Error.Clipboard" = "Hata oluştu. Daha fazla bilgi için panoyu kontrol edin";
 "Error.PathIssue" = "Hata oluştu. Son yolun oluşturulmasında sorun. Medya başlığıyla ilgili sorun mu?";
+"Download.Failed" = "İndirme başarısız oldu. Hata kodu: %@";
 "Error.TryLater" = "Canlı yayın yapılıyor veya medya, Google sunucusunda işleme devam ediliyor.\n\nLütfen daha sonra tekrar deneyin.";
 "Error.NoSpace" = "Cihazda yetersiz alan.\n\nEn az %@ ek serbest alan gereklidir. Mevcut serbest alan: %@";
 "Error.Multidownloading" = "Çoklu indirme henüz mevcut değil.";
@@ -715,15 +964,17 @@
 "Sb.Alphabetical" = "Alfabetik (A-Z)";
 "Sb.AlphabeticalRev" = "Ters sıra (Z-A)";
 
-"Welcome.Download" = "Medya İndir";
-"Welcome.DownloadDesc" = "En sevdiğiniz içerikleri indirin, ister Videolar, Shorts, Sesler, ister Profil fotoğrafları olsun. İlginç gönderileri ve yorumları kopyalayın veya görüntü olarak kaydedin";
-"Welcome.Content" = "Arayüzü Ayarla";
-"Welcome.ContentDesc" = "İstenmeyen içerikleri ve arayüz öğelerini kaldırın. Gerçek OLED karanlık modunu etkinleştirin";
-"Welcome.Player" = "Oynatıcı Davranışını Ayarla";
-"Welcome.PlayerDesc" = "Oynatıcının davranışını özelleştirin, kaliteyi ve oynatma hızını otomatik seçin. Hareketlerle kontrol edin";
-"Welcome.More" = "Ve daha fazlası...";
-"Welcome.MoreDesc" = "YouTube Plus, tercihlerinizi kaydetme ve önbelleği temizleme gibi 50'den fazla farklı seçenek içerir. Ayarlar YouTube ayarları altındaki YouTube Plus bölümünde mevcuttur";
-"SupportMe" = "Beni destekleyin";
+"Welcome.Subtitle" = "Bildiğin YouTube, şimdi çok daha rahat";
+"Welcome.Download" = "İndirilenler";
+"Welcome.DownloadDesc" = "İstediğin kalitede videolar, Shorts'lar, müzikler ve tüm oynatma listeleri. Kaydedilen her şey kendi sekmesinde yer alır.";
+"Welcome.Player" = "Özel Oynatıcı";
+"Welcome.PlayerDesc" = "İster çevrimiçi ister çevrimdışı izleme için hareketler ve esnek kontrollere sahip tam özellikli bir oynatıcı.";
+"Welcome.SponsorBlock" = "SponsorBlock";
+"Welcome.SponsorBlockDesc" = "Kısımları atla, kendi katkılarını yap ve mevcut olanlara oy ver.";
+"Welcome.Clean" = "Temiz Arayüz";
+"Welcome.CleanDesc" = "Akıştan, oynatıcıdan ve Shorts'tan reklamları ve istenmeyen öğeleri kaldır.";
+"Welcome.Settings" = "Esnek Ayarlar";
+"Welcome.SettingsDesc" = "Sekme çubuğu, düğme düzeni, OLED tema, Liquid Glass ve daha fazlası — hepsi Ayarlar'ın YouTube Plus bölümünde.";
 "Continue" = "Devam et";
 
 "Conflicts.Detected" = "Uyumsuz Tweak'ler Tespit Edildi";
@@ -733,3 +984,87 @@
 "Conflicts.CloseYT" = "YouTube'u Kapat";
 
 "DonationReminder" = "Desteğiniz, YouTube Plus'ı daha da iyi hale getirmeme yardımcı oluyor.\n\nDoğrudan katkıda bulunabilir veya bu bildirimleri YouTube Plus ayarlarında devre dışı bırakabilirsiniz. Teşekkürler💜";
+
+"Quality" = "Kalite";
+"PreferredQuality" = "Tercih edilen kalite";
+"PlaylistQualityAVC" = "En iyi avc1 • 1080p'ye kadar";
+"PlaylistQualityAV1" = "En iyi av1/vp9 • 4K'ya kadar";
+"PlaylistQualityAudio" = "Yalnızca ses • Orijinal";
+"PlaylistQualityMP3" = "Yalnızca ses • MP3";
+"PlaylistDownloadFooter" = "Medya dönüştürülebilir ve hem medya hem de meta verileri daha sonra İndirilenler sekmesinden düzenlenebilir.";
+"AudioTrack" = "Ses parçası";
+"Captions" = "Altyazılar";
+"AfterDownload" = "Şuraya kaydet...";
+"AudioOnly" = "Yalnızca ses";
+"StableVolume" = "Kararlı ses";
+"RequiresReencoding" = "Yeniden kodlama gerektirir";
+"NoCaptions" = "Altyazı ekleme";
+"Download" = "İndir";
+"SaveCaptions" = "Altyazıları kaydet";
+"Format" = "Format";
+"Preset" = "Kodlama ön ayarı";
+"PresetUltraFast" = "Ultra hızlı";
+"PresetVeryFast" = "Çok hızlı";
+"PresetMedium" = "Orta";
+"FetchingData" = "Video verileri alınıyor...";
+"PresetSkip" = "Dönüştürmeyi atla";
+"PresetSkipDesc" = "En hızlı • Fotoğraflara kaydedilemez";
+"PresetUltraFastDesc" = "Hızlı • Daha büyük boyut";
+"PresetVeryFastDesc" = "Dengeli";
+"PresetMediumDesc" = "Yavaş • Daha küçük boyut";
+"AlreadyDownloading" = "Bu video zaten indiriliyor";
+"RemoveSegments" = "Kısımları kaldır";
+"NoSegments" = "Hiçbiri";
+"RemovingSegments" = "Kısımlar kaldırılıyor…";
+"AutoDubbed" = "Otomatik dublajlı";
+"SkipToHighlight" = "Önemli ana atla";
+"EditMetadata" = "Meta verileri düzenle";
+"MetadataCover" = "Kapak";
+"MetadataRemoveCover" = "Kapağı kaldır";
+"MetadataTitle" = "Başlık";
+"MetadataArtist" = "Sanatçı";
+"MetadataAlbum" = "Albüm";
+"MetadataYear" = "Yıl";
+"ChangeCover" = "Kapağı değiştir";
+"SbWhitelistChannel" = "Bu kanalı beyaz listeye ekle";
+"CurrentImage" = "Görüntü";
+"PostAsImage" = "Gönderiyi görsel yap";
+"CommentAsImage" = "Yorumu görsel yap";
+"Translate.TooManyRequests" = "Google is rate limiting the translator. Please try again in a few minutes.";
+"Translate.Failed" = "The translator is unavailable right now. Please try again later.";
+"AvailableSegments" = "Mevcut kısımlar";
+"Sb.SubmitInvalid" = "Önce kategoriyi ve her iki sınırı da doldurun";
+"Sb.SubmitRejected" = "Otomatik moderatör bu gönderiyi reddetti";
+"Sb.SubmitDuplicate" = "Bu kısım zaten gönderilmiş";
+"Sb.SubmitTooOften" = "Çok fazla gönderim yapıldı. Lütfen daha sonra tekrar deneyin";
+"SubmitSegments" = "Kısımları gönder";
+"Sb.ExistingSegments" = "Mevcut kısımlar";
+"Sb.NewSegment" = "Yeni kısım";
+"Sb.Category" = "Kategori";
+"Sb.NotChosen" = "Seçilmedi";
+"Sb.SegmentStart" = "Kısım başlangıcı";
+"Sb.SegmentEnd" = "Kısım bitişi";
+"Sb.MarkHere" = "Mevcut zamanı işaretlemek için dokun";
+"Sb.HighlightNoEnd" = "Önemli an için gerekli değil";
+"Sb.AddSegment" = "Kısım ekle";
+"Sb.Submit" = "Gönder";
+"Sb.Submitting" = "Gönderiliyor…";
+"Sb.Submitted" = "Kısımlar gönderildi";
+"Sb.ConfirmTitle" = "Bu kısımlar gönderilsin mi?";
+"Sb.Upvote" = "Beğen";
+"Sb.Downvote" = "Beğenme";
+"Sb.UndoVote" = "Oyu geri al";
+"Sb.ChangeCategory" = "Kategoriyi değiştir";
+"Sb.VoteSent" = "Oy gönderildi";
+"Sb.LeaveLandscape" = "Kısımları göndermek için yatay moddan çıkın";
+"Sb.RemoveSegment" = "Kısımı kaldır";
+
+/* Update alert */
+"Update.Message" = "Yeni bir sürüm mevcut";
+"Update.Repo" = "Web deposu";
+"Update.Skip" = "Bu sürümü atla";
+"Update.Dismiss" = "Kapat";
+
+/* Live playback */
+"Player.Live" = "Canlı";
+"Auto" = "Otomatik";
